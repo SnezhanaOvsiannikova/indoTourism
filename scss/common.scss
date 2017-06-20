@@ -1,10 +1,7 @@
 @import "variables.scss";
 
 body  {
-	font: {
-		family: 'SegoeWPN', Arial, Helvetica, sans-serif;
-        weight: 500; 
-	}
+	font-family: 'SegoeWPN', Arial, Helvetica, sans-serif; 
 }
 .container {
 	width: 100%;
@@ -22,32 +19,101 @@ body  {
 		text-indent: -9999px;
 	}
 }
-//start header//
-.header {
-	position: relative;
-	z-index: 1;
-	padding: 20px 153px 14px;
-
-}
-//end header//
 .navbar {
-	position: relative;
+	position: absolute;
 	background: transparent;
 	border: none;
 	margin-bottom: 0;
+	left: 0;
+	right: 0;
+	top: -46px;
 	.navbar-collapse {
 		border: none;
 		box-shadow: none;
-		margin-top: 20px;
+		margin-top: 6px;
+		text-align: center;
+		background: rgba(240,240,240,0.8);
+		padding: 0;
+		overflow: hidden;
+		&.in {
+			overflow: hidden;
+		}
 		.navbar-nav {
-			float: right;
+			float: none;
 			font-size: 16px;
 			li {
 				a {
 					color: $darkGray;
-					padding: 8px 16px;
+					padding: 6px 12px;
+					display: inline-block;
 				}
 			}
+			.active a {
+				border: 1px solid $blue2;
+				color: $white;
+				-webkit-border-radius: 4px;
+				-o-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-moz-border-radius: 4px;
+				border-radius: 4px;
+				background: #74cbfa;
+				background: -moz-linear-gradient(top, #74cbfa 0%, #1f85e7 100%); 
+				background: -webkit-linear-gradient(top, #74cbfa 0%,#1f85e7 100%); 
+				background: linear-gradient(to bottom, #74cbfa 0%,#1f85e7 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cbfa', endColorstr='#1f85e7',GradientType=0 );
+			} 
 		}
 	} 
 }
+//start header//
+.header {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.22);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.22);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.22);
+
+}
+//end header//
+//start main//
+.main {
+	position: relative;
+	z-index: 1;
+	.banner {
+		height: 534px;
+    	overflow: hidden;
+    	position: relative;
+    	.wrapp-info {
+    		position: absolute;
+		    top: 44%;
+		    color: #fff;
+		    max-width: 880px;
+		    text-align: center;
+		    left: 50%;
+		    transform: translate3d(-50%,-50%,0);
+    		color: $white;
+    		h2 {
+    			font: {
+    				size: 48px;
+    				weight: 500;
+    			}
+    			line-height: 52px;
+    			margin: 0;
+    			
+    		}
+    		h2,span {
+    			text-transform: uppercase;
+    		}
+    		span {
+				font: {
+					size: 48px;
+					weight: 200  !important; 
+	    		}
+    			line-height: 52px;
+    			display: block;
+    		}
+    	}
+	}
+}
+//end main//

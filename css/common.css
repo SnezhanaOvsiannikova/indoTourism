@@ -1,6 +1,5 @@
 body {
-  font-family: 'SegoeWPN', Arial, Helvetica, sans-serif;
-  font-weight: 500; }
+  font-family: 'SegoeWPN', Arial, Helvetica, sans-serif; }
 
 .container {
   width: 100%; }
@@ -17,23 +16,78 @@ body {
     overflow: hidden;
     text-indent: -9999px; }
 
-.header {
-  position: relative;
-  z-index: 1;
-  padding: 20px 153px 14px; }
-
 .navbar {
-  position: relative;
+  position: absolute;
   background: transparent;
   border: none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  left: 0;
+  right: 0;
+  top: -46px; }
   .navbar .navbar-collapse {
     border: none;
     box-shadow: none;
-    margin-top: 20px; }
+    margin-top: 6px;
+    text-align: center;
+    background: rgba(240, 240, 240, 0.8);
+    padding: 0;
+    overflow: hidden; }
+    .navbar .navbar-collapse.in {
+      overflow: hidden; }
     .navbar .navbar-collapse .navbar-nav {
-      float: right;
+      float: none;
       font-size: 16px; }
       .navbar .navbar-collapse .navbar-nav li a {
         color: #676767;
-        padding: 8px 16px; }
+        padding: 6px 12px;
+        display: inline-block; }
+      .navbar .navbar-collapse .navbar-nav .active a {
+        border: 1px solid #1784d1;
+        color: #fff;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background: #74cbfa;
+        background: -moz-linear-gradient(top, #74cbfa 0%, #1f85e7 100%);
+        background: -webkit-linear-gradient(top, #74cbfa 0%, #1f85e7 100%);
+        background: linear-gradient(to bottom, #74cbfa 0%, #1f85e7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cbfa', endColorstr='#1f85e7',GradientType=0 ); }
+
+.header {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22); }
+
+.main {
+  position: relative;
+  z-index: 1; }
+  .main .banner {
+    height: 534px;
+    overflow: hidden;
+    position: relative; }
+    .main .banner .wrapp-info {
+      position: absolute;
+      top: 44%;
+      color: #fff;
+      max-width: 880px;
+      text-align: center;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      color: #fff; }
+      .main .banner .wrapp-info h2 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 52px;
+        margin: 0; }
+      .main .banner .wrapp-info h2, .main .banner .wrapp-info span {
+        text-transform: uppercase; }
+      .main .banner .wrapp-info span {
+        font-size: 48px;
+        font-weight: 200  !important;
+        line-height: 52px;
+        display: block; }

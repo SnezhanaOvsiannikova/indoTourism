@@ -1,4 +1,18 @@
-@media (min-width: 980px) {
+@media (min-width: 768px) {
+  .navbar {
+    position: relative;
+    top: 0; }
+    .navbar .navbar-collapse {
+      background: transparent;
+      margin-top: 20px; }
+      .navbar .navbar-collapse .navbar-nav {
+        float: right; }
+        .navbar .navbar-collapse .navbar-nav li {
+          margin-left: 14px; }
+          .navbar .navbar-collapse .navbar-nav li:first-child {
+            margin-left: 0; } }
+
+@media (min-width: 1024px) {
   .container {
-    width: 975px;
+    width: 1000px;
     margin: 0 auto; } }

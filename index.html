@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/font-face.css">
 	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -14,12 +16,12 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<h1 class="logo">
 						<a href="#">Logo</a>
 					</h1>
 				</div>
-				<div class="col-md-8">
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 					<div class="navbar navbar-default">
 						<div class="navbar-header">
 					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -43,18 +45,21 @@
 		</div>
 	</header>
 	<div class="main">
-		<div class="banner" id="banner">
-			<div class="slide">
-				<img src="images/banner-1.jpg" alt="banner">
+		<div class="banner">
+			<div id="slider">
+				<div class="slide">
+					<img src="images/banner-1.jpg" alt="banner" class="img-scale">
+				</div>
+				<div class="slide">
+					<img src="images/banner-2.jpg" alt="banner" class="img-scale">
+				</div>
+				<div class="slide">
+					<img src="images/banner-3.jpg" alt="banner" class="img-scale">
+				</div>
 			</div>
-			<div class="slide">
-				<img src="images/banner-2.jpg" alt="banner">
-			</div>
-			<div class="slide">
-				<img src="images/banner-3.jpg" alt="banner">
-			</div>
-			<div class="col-md-6 col-md-offset-3 wrapp-info">
-				<h2>I Like To Ask The Same Question <br><span>many many times</span></h2>
+			<div class="col-md-12 wrapp-info">
+				<h2>I Like To Ask The Same Question</h2>
+				<span>many many times</span>
 				<a href="" class="btn">Ok ask me</a>
 			</div>
 		</div>
@@ -62,5 +67,7 @@
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/image-scale.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
