@@ -105,7 +105,8 @@ body {
   margin: -86px auto 58px;
   -webkit-box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.28);
-  box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.28); }
+  box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.28);
+  z-index: 1; }
   .media-block h3 {
     margin-top: 0;
     margin-bottom: 26px;
@@ -134,6 +135,25 @@ body {
         .media-block .media-item li a span {
           display: block; }
 
+#slider {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  #slider .slick-track {
+    display: block;
+    left: 0;
+    position: relative;
+    top: 0;
+    height: 100%; }
+  #slider .slick-list {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    height: 100%; }
+
 .header {
   z-index: 1000;
   position: relative;
@@ -158,7 +178,8 @@ body {
     -moz-transform: translate3d(-50%, -50%, 0);
     -o-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
-    color: #fff; }
+    color: #fff;
+    z-index: 1; }
     .main .banner .wrapp-info h2 {
       font-size: 40px;
       font-weight: 600;

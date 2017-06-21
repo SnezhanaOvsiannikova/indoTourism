@@ -120,6 +120,7 @@ body  {
     -webkit-box-shadow: 0px -1px 10px 1px rgba(0,0,0,0.28);
 	-moz-box-shadow: 0px -1px 10px 1px rgba(0,0,0,0.28);
 	box-shadow: 0px -1px 10px 1px rgba(0,0,0,0.28);
+	z-index: 1;
 	h3 {
 		margin-top: 0;
 		margin-bottom: 26px;
@@ -156,6 +157,27 @@ body  {
 	}
 
 }
+#slider {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	.slick-track {
+		display: block;
+		left: 0;
+		position: relative;
+		top: 0;
+		height: 100%;
+	}
+	.slick-list {
+		display: block;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+		height: 100%;
+	}
+}
 //start header//
 .header {
 	z-index: 1000;
@@ -186,6 +208,7 @@ body  {
 		    -o-transform: translate3d(-50%,-50%,0);
 		    transform: translate3d(-50%,-50%,0);
     		color: $white;
+    		z-index: 1;
     		h2 {
     			font: {
     				size: 40px;
