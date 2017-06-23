@@ -24,4 +24,10 @@ $(document).ready(function () {
         fade: true,
         cssEase: 'linear'
 	});
-})
+	$('.open-popup-link').magnificPopup({
+	  type:'inline',
+	  midClick: true
+	});
+});
+
+

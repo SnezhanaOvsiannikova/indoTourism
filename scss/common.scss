@@ -1,7 +1,53 @@
 @import "variables.scss";
 
 body  {
-	font-family: 'SegoeWPLight', Arial, Helvetica, sans-serif; 
+	font-family: 'SegoeWPLight', Arial, Helvetica, sans-serif;
+	background: $white !important;
+}
+.white-popup {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width:auto;
+	max-width: 500px;
+	margin: 20px auto;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+  	.heading-center {
+  		position: relative;
+  		text-align: center;
+	  	h5 {
+	  		font: {
+	  			size: 30px;
+	  			weight: 600; 
+	  		}
+	  		line-height: 34px;
+	  	}
+	}
+	img {
+		margin-bottom: 20px;
+		display: inline-block;
+	}
+	p {
+		font-size: 20px;
+		line-height: 26px;
+		text-align: justify;
+	}
+}
+.mfp-close-btn-in .mfp-close {
+	color: $gray1;
+	&:hover {
+		color: $gray1;
+	}
+}
+.mfp-container {
+	padding: 0 20px;
 }
 .container {
 	width: 100%;
@@ -90,6 +136,9 @@ body  {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 14px 5px;
+	&:hover {
+		color: $blue1;
+	}
 	span {
 		background: #6feb55;
 		padding: 6px 60px;
@@ -136,11 +185,17 @@ body  {
 			display: inline-block;
 			margin-right: 2px;
 			margin-bottom: 12px;
-			a {
+			.open-popup-link {
 				color: $gray1;
 				&:hover {
 					color: $blue1;
+				}
+				&:focus,
+				&:hover {
 					text-decoration: none;
+				}
+				&:focus {
+					outline: none;
 				}
 				.img-holder {
 					display: inline-block;
