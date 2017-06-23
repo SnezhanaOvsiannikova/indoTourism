@@ -7,7 +7,7 @@ $(document).ready(function () {
 				rescaleOnResize: true,
 				align: 'center'
 			});
-		}, 100);
+		}, 500);
 	});
 
 	slider.slick({
@@ -25,8 +25,8 @@ $(document).ready(function () {
         cssEase: 'linear'
 	});
 	$('.open-popup-link').magnificPopup({
-	  type:'inline',
-	  midClick: true
+	  	type:'inline',
+	  	midClick: true
 	});
 });
 
