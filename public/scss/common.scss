@@ -212,7 +212,7 @@ body  {
 	}
 
 }
-#slider {
+#slider, #main-slider {
 	height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -277,7 +277,8 @@ body  {
 
 .about-us,
 .our-team,
-.additions {
+.additions,
+.programs {
 	position: relative;
 	.heading-center {
 		color: $gray3;
@@ -358,6 +359,38 @@ body  {
 		border-radius: 50%;
 		overflow: hidden;
 		margin: 0 auto;
+	}
+}
+.programs {
+	padding: 40px 0;
+	h3 {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	article {
+		position: relative;
+		margin-bottom: 20px;
+		width: 400px;
+    	height: 300px;
+    	overflow: hidden;
+    	&:hover .content-block {
+			transform: translate3d(0, 0, 0);
+    	}
+		.content-block {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.3);
+			box-sizing: border-box;
+		    color: $white;
+		    font-size: 20px;
+		    line-height: 24px;
+		    padding: 10px 20px;
+		    transition: all 0.7s;
+		    transform: translate3d(0, +100%, 0);
+		    z-index: 2;
+		}
 	}
 }
 //end header//

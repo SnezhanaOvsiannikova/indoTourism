@@ -180,18 +180,18 @@ body {
         .media-block .media-item li .open-popup-link span {
           display: block; }
 
-#slider {
+#slider, #main-slider {
   height: 100%;
   overflow: hidden;
   position: relative;
   z-index: 1; }
-  #slider .slick-track {
+  #slider .slick-track, #main-slider .slick-track {
     display: block;
     left: 0;
     position: relative;
     top: 0;
     height: 100%; }
-  #slider .slick-list {
+  #slider .slick-list, #main-slider .slick-list {
     display: block;
     margin: 0;
     overflow: hidden;
@@ -235,11 +235,13 @@ body {
 
 .about-us,
 .our-team,
-.additions {
+.additions,
+.programs {
   position: relative; }
   .about-us .heading-center,
   .our-team .heading-center,
-  .additions .heading-center {
+  .additions .heading-center,
+  .programs .heading-center {
     color: #7e7c7c; }
 
 .additions-list a {
@@ -307,6 +309,34 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto; }
+
+.programs {
+  padding: 40px 0; }
+  .programs h3 {
+    margin-top: 0;
+    margin-bottom: 20px; }
+  .programs article {
+    position: relative;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 300px;
+    overflow: hidden; }
+    .programs article:hover .content-block {
+      transform: translate3d(0, 0, 0); }
+    .programs article .content-block {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 10px 20px;
+      transition: all 0.7s;
+      transform: translate3d(0, 100%, 0);
+      z-index: 2; }
 
 .main .banner {
   height: 534px;
