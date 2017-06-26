@@ -4,6 +4,10 @@ body  {
 	font-family: 'SegoeWPLight', Arial, Helvetica, sans-serif;
 	background: $white !important;
 }
+.heading-center {
+	position: relative;
+	text-align: center;
+}
 .white-popup {
 	position: relative;
 	background: #FFF;
@@ -19,16 +23,12 @@ body  {
 	-webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-  	.heading-center {
-  		position: relative;
-  		text-align: center;
-	  	h5 {
-	  		font: {
-	  			size: 30px;
-	  			weight: 600; 
-	  		}
-	  		line-height: 34px;
-	  	}
+  	h5 {
+  		font: {
+  			size: 30px;
+  			weight: 600; 
+  		}
+  		line-height: 34px;
 	}
 	img {
 		margin-bottom: 20px;
@@ -54,7 +54,7 @@ body  {
 }
 .logo {
 	position: relative;
-	background: url(../images/logo.png) no-repeat;
+	background: $bgImg no-repeat -190px -5px;
 	width: 175px;
 	height: 28px;
 	a {
@@ -243,6 +243,123 @@ body  {
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.22);
 
 }
+.about-us {
+	font-size: 18px;
+	line-height: 25px;
+	.holder {
+		position: relative;
+		margin-bottom: 15px;
+		h3, p {
+			margin: 0;
+		}
+		h3 {
+			font: {
+				size: 22px;
+				family: 'SegoeWPN', Arial, Helvetica, sans-serif;
+				weight: 600;
+			}
+			line-height: 36px;
+			color: $gray1;
+		}
+	}
+}
+.about-us,
+.our-team {
+	background: $gray4;
+	padding: 40px 0 10px;  
+	h2 {
+		margin-bottom: 20px;
+		margin-top: 0;
+		line-height: 36px;
+		font-size: 32px;
+	}
+}
+
+.about-us,
+.our-team,
+.additions {
+	position: relative;
+	.heading-center {
+		color: $gray3;
+	}
+}
+.additions-list {
+	a {
+		display: inline-block;
+		font-size: 20px;
+		line-height: 24px;
+		color: $gray3;
+		&:hover {
+			color: $blue1;
+			text-decoration: none;
+		}
+		.wrapp-ico {
+			background: $white;
+			margin-bottom: 16px;
+			width: 133px;
+			height: 133px;
+			position: relative;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			&:after {
+				position: absolute;
+				content: '';
+				top: 50%;
+				left: 50%;
+				transform: translate3d(-50%, -50%, 0);
+				background-repeat: no-repeat;
+				background-image: $bgImg;
+			}
+		}
+		.sites:after {
+			background-position: -5px -5px;
+			width: 98px;
+			height: 98px;
+		}
+		.shopping:after {
+			background-position: -5px -113px;
+			width: 77px;
+			height: 71px;
+		}
+		.photography:after {
+			 background-position: -92px -113px;
+			width: 76px;
+			height: 50px;
+		}
+		.search:after {
+			background-position: -113px -5px;
+			width: 67px;
+			height: 67px;
+		}
+	}
+}
+.additions-list,
+.team-block {
+	position: relative;
+	overflow: hidden;
+	li {
+		position: relative;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+.team-block {
+	.img-holder {
+		position: relative;
+		width: 135px;
+		height: 135px;
+		-webkit-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+}
 //end header//
 //start main//
 .main {
@@ -287,84 +404,24 @@ body  {
 	.additions {
 		background: $gray4;
 		padding: 0 0 62px;
-		.heading {
-			color: $gray3;
-			text-align: center; 
-			h4 {
-				font: {
-					size: 26px;
-					weight: 200; 
-				}
-				line-height: 30px;
+		h4 {
+			font: {
+				size: 26px;
+				weight: 200; 
 			}
-			p {
-				font: {
-					size: 22px;
-					weight: 200; 
-				}
-				line-height: 26px;
-				margin-bottom: 50px;
-			}
+			line-height: 30px;
 		}
-		.additions-list {
-			position: relative;
-			li {
-				position: relative;
-				text-align: center;
-				margin-bottom: 20px;
-				a {
-					display: inline-block;
-					font-size: 20px;
-					line-height: 24px;
-					color: $gray3;
-					&:hover {
-						color: $blue1;
-						text-decoration: none;
-					}
-					.wrapp-ico {
-						background: $white;
-						margin-bottom: 16px;
-						width: 133px;
-						height: 133px;
-						-webkit-border-radius: 50%;
-						-o-border-radius: 50%;
-						-ms-border-radius: 50%;
-						-moz-border-radius: 50%;
-						border-radius: 50%;
-						position: relative;
-						&:after {
-							position: absolute;
-							content: '';
-							top: 50%;
-							left: 50%;
-							transform: translate3d(-50%, -50%, 0);
-						}
-					}
-					.sites:after {
-						background: url(../images/ico-1.png) no-repeat;
-						width: 98px;
-						height: 98px;
-					}
-					.shopping:after {
-						background: url(../images/ico-2.png) no-repeat;
-						width: 77px;
-						height: 71px;
-					}
-					.photography:after {
-						background: url(../images/ico-3.png) no-repeat;
-						width: 76px;
-						height: 50px;
-					}
-					.search:after {
-						background: url(../images/ico-4.png) no-repeat;
-						width: 67px;
-						height: 67px;
-					}
-				}
+		p {
+			font: {
+				size: 22px;
+				weight: 200; 
 			}
+			line-height: 26px;
+			margin-bottom: 50px;
 		}
 	}
 }
+
 //end main//
 //start footer//
 .footer,

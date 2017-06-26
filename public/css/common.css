@@ -2,6 +2,10 @@ body {
   font-family: 'SegoeWPLight', Arial, Helvetica, sans-serif;
   background: #fff !important; }
 
+.heading-center {
+  position: relative;
+  text-align: center; }
+
 .white-popup {
   position: relative;
   background: #FFF;
@@ -17,13 +21,10 @@ body {
   -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75); }
-  .white-popup .heading-center {
-    position: relative;
-    text-align: center; }
-    .white-popup .heading-center h5 {
-      font-size: 30px;
-      font-weight: 600;
-      line-height: 34px; }
+  .white-popup h5 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px; }
   .white-popup img {
     margin-bottom: 20px;
     display: inline-block; }
@@ -45,7 +46,7 @@ body {
 
 .logo {
   position: relative;
-  background: url(../images/logo.png) no-repeat;
+  background: url("../../images/bg-sprite.png") no-repeat -190px -5px;
   width: 175px;
   height: 28px; }
   .logo a {
@@ -206,6 +207,107 @@ body {
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22); }
 
+.about-us {
+  font-size: 18px;
+  line-height: 25px; }
+  .about-us .holder {
+    position: relative;
+    margin-bottom: 15px; }
+    .about-us .holder h3, .about-us .holder p {
+      margin: 0; }
+    .about-us .holder h3 {
+      font-size: 22px;
+      font-family: 'SegoeWPN', Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      line-height: 36px;
+      color: #929292; }
+
+.about-us,
+.our-team {
+  background: #ececec;
+  padding: 40px 0 10px; }
+  .about-us h2,
+  .our-team h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 36px;
+    font-size: 32px; }
+
+.about-us,
+.our-team,
+.additions {
+  position: relative; }
+  .about-us .heading-center,
+  .our-team .heading-center,
+  .additions .heading-center {
+    color: #7e7c7c; }
+
+.additions-list a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7e7c7c; }
+  .additions-list a:hover {
+    color: #2188e8;
+    text-decoration: none; }
+  .additions-list a .wrapp-ico {
+    background: #fff;
+    margin-bottom: 16px;
+    width: 133px;
+    height: 133px;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+    .additions-list a .wrapp-ico:after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      background-repeat: no-repeat;
+      background-image: url("../../images/bg-sprite.png"); }
+  .additions-list a .sites:after {
+    background-position: -5px -5px;
+    width: 98px;
+    height: 98px; }
+  .additions-list a .shopping:after {
+    background-position: -5px -113px;
+    width: 77px;
+    height: 71px; }
+  .additions-list a .photography:after {
+    background-position: -92px -113px;
+    width: 76px;
+    height: 50px; }
+  .additions-list a .search:after {
+    background-position: -113px -5px;
+    width: 67px;
+    height: 67px; }
+
+.additions-list,
+.team-block {
+  position: relative;
+  overflow: hidden; }
+  .additions-list li,
+  .team-block li {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; }
+
+.team-block .img-holder {
+  position: relative;
+  width: 135px;
+  height: 135px;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto; }
+
 .main .banner {
   height: 534px;
   overflow: hidden;
@@ -240,65 +342,15 @@ body {
 .main .additions {
   background: #ececec;
   padding: 0 0 62px; }
-  .main .additions .heading {
-    color: #7e7c7c;
-    text-align: center; }
-    .main .additions .heading h4 {
-      font-size: 26px;
-      font-weight: 200;
-      line-height: 30px; }
-    .main .additions .heading p {
-      font-size: 22px;
-      font-weight: 200;
-      line-height: 26px;
-      margin-bottom: 50px; }
-  .main .additions .additions-list {
-    position: relative; }
-    .main .additions .additions-list li {
-      position: relative;
-      text-align: center;
-      margin-bottom: 20px; }
-      .main .additions .additions-list li a {
-        display: inline-block;
-        font-size: 20px;
-        line-height: 24px;
-        color: #7e7c7c; }
-        .main .additions .additions-list li a:hover {
-          color: #2188e8;
-          text-decoration: none; }
-        .main .additions .additions-list li a .wrapp-ico {
-          background: #fff;
-          margin-bottom: 16px;
-          width: 133px;
-          height: 133px;
-          -webkit-border-radius: 50%;
-          -o-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-          position: relative; }
-          .main .additions .additions-list li a .wrapp-ico:after {
-            position: absolute;
-            content: '';
-            top: 50%;
-            left: 50%;
-            transform: translate3d(-50%, -50%, 0); }
-        .main .additions .additions-list li a .sites:after {
-          background: url(../images/ico-1.png) no-repeat;
-          width: 98px;
-          height: 98px; }
-        .main .additions .additions-list li a .shopping:after {
-          background: url(../images/ico-2.png) no-repeat;
-          width: 77px;
-          height: 71px; }
-        .main .additions .additions-list li a .photography:after {
-          background: url(../images/ico-3.png) no-repeat;
-          width: 76px;
-          height: 50px; }
-        .main .additions .additions-list li a .search:after {
-          background: url(../images/ico-4.png) no-repeat;
-          width: 67px;
-          height: 67px; }
+  .main .additions h4 {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 30px; }
+  .main .additions p {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 26px;
+    margin-bottom: 50px; }
 
 .footer,
 .main {

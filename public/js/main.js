@@ -28,6 +28,7 @@ $(document).ready(function () {
 	  	type:'inline',
 	  	midClick: true
 	});
+	w3.includeHTML();
 });
 
 
