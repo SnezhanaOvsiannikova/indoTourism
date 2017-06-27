@@ -18,7 +18,9 @@
     margin-bottom: 0; }
   .btn {
     font-size: 34px;
-    line-height: 38px; } }
+    line-height: 38px; }
+  .send-message {
+    max-width: 100%; } }
 
 @media (min-width: 1024px) {
   .container {

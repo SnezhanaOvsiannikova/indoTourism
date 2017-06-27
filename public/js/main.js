@@ -29,6 +29,7 @@ $(document).ready(function () {
 	  	midClick: true
 	});
 	$('.programs article .content-block').matchHeight();
+	$('.grid figure h4').matchHeight();
 	w3.includeHTML();
 });
 
