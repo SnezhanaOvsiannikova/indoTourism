@@ -32,7 +32,7 @@ $(document).ready(function () {
 	w3.includeHTML();
 });
 
-(function (){
+function initMap() {
 	"user strice";
 	var myOptions = {
 		zoom:10,
@@ -139,5 +139,5 @@ $(document).ready(function () {
 		    }
 		]
 	);
-}());
+};
 
