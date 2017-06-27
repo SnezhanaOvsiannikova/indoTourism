@@ -32,4 +32,112 @@ $(document).ready(function () {
 	w3.includeHTML();
 });
 
+(function (){
+	"user strice";
+	var myOptions = {
+		zoom:10,
+		center: new google.maps.LatLng(-8.6075754,115.1863163),
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var mapElem = document.getElementById('map');
+
+	if(mapElem == null) { return; }
+	map = new google.maps.Map(mapElem, myOptions);
+
+	marker = new google.maps.Marker({
+		map: map,
+		position: new google.maps.LatLng(-8.6075754,115.1863163)
+	});
+
+	infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Jl. Langon No.16 <br>Sempidi<br> Mengwi <br>Kabupaten Badung, Bali 80116<br>Indonesia'});
+
+	google.maps.event.addListener(marker, 'click', function(){
+		infowindow.open(map,marker);
+	});
+
+	infowindow.open(map,marker);
+
+	map.set('styles',
+		[
+			{
+				"featureType":"administrative",
+				"elementType":"labels.text.fill",
+				"stylers": [
+					{
+						"color":"#444444"
+					}
+				]
+			},
+			{
+				"featureType":"landscape",
+				"elementType":"all",
+				"stylers": [
+					{
+						"color":"#f2f2f2"
+					}
+				]
+			},
+			{
+		        "featureType": "poi",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": -100
+		            },
+		            {
+		                "lightness": 45
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.highway",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "simplified"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.arterial",
+		        "elementType": "labels.icon",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "transit",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "color": "#46bcec"
+		            },
+		            {
+		                "visibility": "on"
+		            }
+		        ]
+		    }
+		]
+	);
+}());
 

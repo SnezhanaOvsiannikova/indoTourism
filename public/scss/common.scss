@@ -253,32 +253,24 @@ body  {
 			margin: 0;
 		}
 		h3 {
-			font: {
-				size: 22px;
-				family: 'SegoeWPN', Arial, Helvetica, sans-serif;
-				weight: 600;
-			}
-			line-height: 36px;
 			color: $gray1;
 		}
 	}
 }
 .about-us,
 .our-team {
-	background: $gray4;
-	padding: 40px 0 10px;  
-	h2 {
-		margin-bottom: 20px;
-		margin-top: 0;
-		line-height: 36px;
-		font-size: 32px;
-	}
+	padding: 40px 0 10px;
 }
+// .about-us,
+// .our-team,
+// .additions {
+	
+// }
 
 .about-us,
 .our-team,
 .additions,
-.programs {
+.contact-us {
 	position: relative;
 	.heading-center {
 		color: $gray3;
@@ -362,10 +354,15 @@ body  {
 	}
 }
 .programs {
-	padding: 40px 0;
 	h3 {
 		margin-top: 0;
 		margin-bottom: 20px;
+		line-height: 32px;
+		color: $white;
+		font: {
+			size: 28px;
+			weight: 600;	
+		}
 	}
 	article {
 		position: relative;
@@ -393,9 +390,167 @@ body  {
 		}
 	}
 }
+.about-us,
+.our-team,
+.contact-us { 
+	h2 {
+		margin-bottom: 20px;
+		margin-top: 0;
+		line-height: 36px;
+		color: $white;
+		font: {
+			weight: 600;
+			size: 32px;
+		}
+	}
+}
+.about-us,
+.contact-us {
+	h3 {
+		font: {
+			size: 22px;
+			family: 'SegoeWPN', Arial, Helvetica, sans-serif;
+			weight: 600;
+		}
+		line-height: 36px;
+	}
+}
+.programs,
+.contact-us {
+	padding: 40px 0; 
+}
+.contact-us {
+	overflow: hidden;
+    h3 {
+    	margin-top: 0;
+    	margin-bottom: 20px;
+    	color: $blue3;
+    	text-transform: uppercase;
+    }
+	address {
+		position: relative;
+		color: $darkGray;
+		span {
+			padding-left: 20px;
+			position: relative;
+			font-size: 16px;
+    		line-height: 20px;
+ 	 	 	margin-bottom: 10px;
+    		display: inline-block;
+			&:after {
+				position: absolute;
+				content: '';
+				left: 0;
+				background-repeat: no-repeat;
+				background-image: $bgImg;
+			}
+		}
+		.location:after {
+			width: 9px;
+			height: 13px;
+			top: calc(50% - 6px);
+			background-position: -189px -59px;
+
+		}
+		.email:after {
+			top: calc(50% - 4px);
+			background-position: -201px -62px;
+			width: 12px;
+			height: 8px;
+		}
+		.phone:after {
+			top: calc(50% - 6px);
+			background-position: -215px -59px;
+			width: 10px;
+			height: 11px;
+		}
+	}
+}
+.social-media {
+	position: relative;
+	li {
+		display: inline-block;
+		background: $white;
+		position: relative;
+		width: 25px;
+		height: 25px;
+		-webkit-border-radius: 50%;
+	    -o-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    border-radius: 50%;
+	    margin-left: 5px;
+	    &:first-child {
+	    	margin-left: 0;
+	    }
+	    a {
+	    	width: 100%;
+	    	height: 100%;
+	    	display: block;
+	    	color: $gray1;
+	    	&:hover {
+	    		color: $superDarkGray;
+	    	}
+	    	.fa {
+		    	position: absolute;
+		    	top: 50%;
+		    	left: 50%;
+		    	-webkit-transform: translate3d(-50%,-50%,0);
+			    -ms-transform: translate3d(-50%,-50%,0);
+			    -moz-transform: translate3d(-50%,-50%,0);
+			    -o-transform: translate3d(-50%,-50%,0);
+			    transform: translate3d(-50%,-50%,0);
+		    }
+	    }
+	}
+}
+#map {
+	height: 460px;
+	-webkit-box-shadow: 0px 6px 30px 4px rgba(0,0,0,0.55);
+	-moz-box-shadow: 0px 6px 30px 4px rgba(0,0,0,0.55);
+	box-shadow: 0px 6px 30px 4px rgba(0,0,0,0.55);
+}
+.send-message {
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-bottom: 85px;
+	input, 
+	textarea {
+		display: inline-block;
+		padding: 8px;
+		width: 100%;
+		margin-bottom: 10px;
+		-webkit-border-radius: 5px;
+	    -o-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    border: 1px solid $gray1; 
+	}
+	textarea {
+		resize: none;
+		min-height: 150px;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+.btn-send {
+	background: $blue3;
+	color: $white;
+	border: 1px  solid $gray1;
+	padding: 5px 25px;
+	cursor: pointer;
+	font: {
+		size: 18px;
+		weight: 600; 
+	}
+}
 //end header//
 //start main//
 .main {
+	background: $gray4;
 	.banner {
 		height: 534px;
     	overflow: hidden;
@@ -435,7 +590,6 @@ body  {
     	}
 	}
 	.additions {
-		background: $gray4;
 		padding: 0 0 62px;
 		h4 {
 			font: {

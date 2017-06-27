@@ -216,32 +216,21 @@ body {
     .about-us .holder h3, .about-us .holder p {
       margin: 0; }
     .about-us .holder h3 {
-      font-size: 22px;
-      font-family: 'SegoeWPN', Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      line-height: 36px;
       color: #929292; }
 
 .about-us,
 .our-team {
-  background: #ececec;
   padding: 40px 0 10px; }
-  .about-us h2,
-  .our-team h2 {
-    margin-bottom: 20px;
-    margin-top: 0;
-    line-height: 36px;
-    font-size: 32px; }
 
 .about-us,
 .our-team,
 .additions,
-.programs {
+.contact-us {
   position: relative; }
   .about-us .heading-center,
   .our-team .heading-center,
   .additions .heading-center,
-  .programs .heading-center {
+  .contact-us .heading-center {
     color: #7e7c7c; }
 
 .additions-list a {
@@ -310,77 +299,211 @@ body {
   overflow: hidden;
   margin: 0 auto; }
 
-.programs {
-  padding: 40px 0; }
-  .programs h3 {
-    margin-top: 0;
-    margin-bottom: 20px; }
-  .programs article {
-    position: relative;
-    margin-bottom: 20px;
-    width: 400px;
-    height: 300px;
-    overflow: hidden; }
-    .programs article:hover .content-block {
-      transform: translate3d(0, 0, 0); }
-    .programs article .content-block {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.3);
-      box-sizing: border-box;
-      color: #fff;
-      font-size: 20px;
-      line-height: 24px;
-      padding: 10px 20px;
-      transition: all 0.7s;
-      transform: translate3d(0, 100%, 0);
-      z-index: 2; }
+.programs h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 32px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600; }
 
-.main .banner {
-  height: 534px;
-  overflow: hidden;
-  position: relative; }
-  .main .banner .wrapp-info {
+.programs article {
+  position: relative;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 300px;
+  overflow: hidden; }
+  .programs article:hover .content-block {
+    transform: translate3d(0, 0, 0); }
+  .programs article .content-block {
     position: absolute;
-    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
     color: #fff;
-    max-width: 910px;
-    text-align: center;
-    left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    -ms-transform: translate3d(-50%, -50%, 0);
-    -moz-transform: translate3d(-50%, -50%, 0);
-    -o-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
-    color: #fff;
-    z-index: 1; }
-    .main .banner .wrapp-info h2 {
-      font-size: 40px;
-      font-weight: 600;
-      line-height: 44px;
-      margin: 0; }
-    .main .banner .wrapp-info h2, .main .banner .wrapp-info p {
-      text-transform: uppercase; }
-    .main .banner .wrapp-info p {
-      font-size: 32px;
-      line-height: 36px;
-      display: block;
-      margin-bottom: 36px; }
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 20px;
+    transition: all 0.7s;
+    transform: translate3d(0, 100%, 0);
+    z-index: 2; }
 
-.main .additions {
-  background: #ececec;
-  padding: 0 0 62px; }
-  .main .additions h4 {
-    font-size: 26px;
-    font-weight: 200;
-    line-height: 30px; }
-  .main .additions p {
-    font-size: 22px;
-    font-weight: 200;
-    line-height: 26px;
-    margin-bottom: 50px; }
+.about-us h2,
+.our-team h2,
+.contact-us h2 {
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px; }
+
+.about-us h3,
+.contact-us h3 {
+  font-size: 22px;
+  font-family: 'SegoeWPN', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 36px; }
+
+.programs,
+.contact-us {
+  padding: 40px 0; }
+
+.contact-us {
+  overflow: hidden; }
+  .contact-us h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1298dd;
+    text-transform: uppercase; }
+  .contact-us address {
+    position: relative;
+    color: #676767; }
+    .contact-us address span {
+      padding-left: 20px;
+      position: relative;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      display: inline-block; }
+      .contact-us address span:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        background-repeat: no-repeat;
+        background-image: url("../../images/bg-sprite.png"); }
+    .contact-us address .location:after {
+      width: 9px;
+      height: 13px;
+      top: calc(50% - 6px);
+      background-position: -189px -59px; }
+    .contact-us address .email:after {
+      top: calc(50% - 4px);
+      background-position: -201px -62px;
+      width: 12px;
+      height: 8px; }
+    .contact-us address .phone:after {
+      top: calc(50% - 6px);
+      background-position: -215px -59px;
+      width: 10px;
+      height: 11px; }
+
+.social-media {
+  position: relative; }
+  .social-media li {
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: 5px; }
+    .social-media li:first-child {
+      margin-left: 0; }
+    .social-media li a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #929292; }
+      .social-media li a:hover {
+        color: #414141; }
+      .social-media li a .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -ms-transform: translate3d(-50%, -50%, 0);
+        -moz-transform: translate3d(-50%, -50%, 0);
+        -o-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0); }
+
+#map {
+  height: 460px;
+  -webkit-box-shadow: 0px 6px 30px 4px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 6px 30px 4px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 6px 30px 4px rgba(0, 0, 0, 0.55); }
+
+.send-message {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 85px; }
+  .send-message input,
+  .send-message textarea {
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #929292; }
+  .send-message textarea {
+    resize: none;
+    min-height: 150px; }
+    .send-message textarea:focus {
+      outline: none; }
+
+.btn-send {
+  background: #1298dd;
+  color: #fff;
+  border: 1px solid #929292;
+  padding: 5px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600; }
+
+.main {
+  background: #d5d4d4; }
+  .main .banner {
+    height: 534px;
+    overflow: hidden;
+    position: relative; }
+    .main .banner .wrapp-info {
+      position: absolute;
+      top: 50%;
+      color: #fff;
+      max-width: 910px;
+      text-align: center;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      -ms-transform: translate3d(-50%, -50%, 0);
+      -moz-transform: translate3d(-50%, -50%, 0);
+      -o-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+      color: #fff;
+      z-index: 1; }
+      .main .banner .wrapp-info h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 44px;
+        margin: 0; }
+      .main .banner .wrapp-info h2, .main .banner .wrapp-info p {
+        text-transform: uppercase; }
+      .main .banner .wrapp-info p {
+        font-size: 32px;
+        line-height: 36px;
+        display: block;
+        margin-bottom: 36px; }
+  .main .additions {
+    padding: 0 0 62px; }
+    .main .additions h4 {
+      font-size: 26px;
+      font-weight: 200;
+      line-height: 30px; }
+    .main .additions p {
+      font-size: 22px;
+      font-weight: 200;
+      line-height: 26px;
+      margin-bottom: 50px; }
 
 .footer,
 .main {

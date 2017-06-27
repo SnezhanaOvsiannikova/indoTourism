@@ -39,8 +39,8 @@
 					      <ul class="nav navbar-nav">
 					       		<li><a href="index.html">Home</a></li>
 								<li><a href="about-us.html">About us</a></li>
-								<li class="active"><a href="#">Programs</a></li>
-								<li><a href="contact-us.html">Contact us</a></li>
+								<li><a href="programs.html">Programs</a></li>
+								<li class="active"><a href="#">Contact us</a></li>
 					      </ul>
 					   </div>		
 					</div>	
@@ -49,61 +49,56 @@
 		</div>
 	</header>
 	<div class="main">
-		<div class="banner">
-			<div id="slider">
-				<div class="slide">
-					<img src="images/banner-4.jpg" alt="banner" class="img-scale">
-				</div>
-				<div class="slide">
-					<img src="images/banner-5.jpg" alt="banner" class="img-scale">
-				</div>
-				<div class="slide">
-					<img src="images/banner-6.jpg" alt="banner" class="img-scale">
-				</div>
-			</div>
-			<div class="col-md-12 wrapp-info">
-				<h2>Our Programs</h2>
-			</div>
-		</div>
-		<section class="programs">
+		<section class="contact-us">
 			<div class="container">
-				<div class="heading-center"><h3>Indo Tourism propose you to choose one of the programs</h3></div>
+				<div class="heading-center"><h2>Contact Us</h2></div>
 				<div class="row">
-					<a href="#" class="col-md-6">
-						<article>
-							<img src="images/img-11.jpg" alt="image">
-							<div class="content-block">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+					<div class="col-md-6">
+						<div class="heading-center"><h3>Contact info</h3></div>
+						<address>
+							<span class="phone">+0812 394 6011</span> <br>
+							<span class="email">indoturism@gmail.com</span><br>
+							<span class="location">JL.Raya Langon 16 Semidi, Bandung</span>
+						</address>
+						<ul class="social-media">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<div class="heading-center"><h3>get in touch with us today</h3></div>
+						<form class="send-message col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" name="name" placeholder="Name" required="required" size="32" minlength="2" maxlength="64">
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="surname" placeholder="Surname" required="required" size="32" minlength="2" maxlength="64">
+								</div>
 							</div>
-						</article>
-					</a>
-					<a href="#" class="col-md-6">
-						<article >
-							<img src="images/img-12.jpg" alt="image">
-							<div class="content-block">
-								<p>Beatae aspernatur eaque, porro quos magni fuga blanditiis quidem minus saepe id</p>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" name="email" placeholder="Email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" size="32" minlength="3" maxlength="64" title="default@example.com">
+								</div>
+								<div class="col-md-6">
+									<input type="tel" name="tel" placeholder="Phone" pattern="^\d{4}-\d{3}-\d{4}$" title="Phone Number (format: xxxx-xxx-xxxx)" required="required">
+								</div>
 							</div>
-						</article>
-					</a>
+							
+							<div class="row">
+								<div class="col-md-12">
+									<textarea name="message" class="message-block" placeholder="Message" maxlength="400" minlength="10" required="required"></textarea>
+									<button class="btn-send" type="submit">Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="row">
-					<a href="#" class="col-md-6">
-						<article>
-							<img src="images/img-13.jpg" alt="image">
-							<div class="content-block">
-								<p>Officiis cupiditate tenetur dolorum suscipit exercitationem, vitae excepturi laboriosam perferendis</p>
-							</div>
-						</article>
-					</a>
-					<a href="#" class="col-md-6">
-						<article>
-							<img src="images/img-14.jpg" alt="image">
-							<div class="content-block">
-								<p>Sit amet, consectetur adipisicing elit. Beatae aspernatur eaque, porro quos magni fuga blanditiis</p>
-							</div>
-						</article>
-					</a>
-				</div>
+			</div>
+			<div class="col-md-12">
+				<div id="map"></div>
 			</div>
 		</section>
 	</div>
