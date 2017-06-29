@@ -16,6 +16,12 @@
             margin-left: 0; }
   .main .additions .additions-list li {
     margin-bottom: 0; }
+  .main .banner-slide-show .left,
+  .main .banner-slide-show .right {
+    opacity: 1; }
+  .main .heading-main-banner h2 {
+    font-size: 54px;
+    line-height: 60px; }
   .btn {
     font-size: 34px;
     line-height: 38px; }
