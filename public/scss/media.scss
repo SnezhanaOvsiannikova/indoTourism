@@ -39,6 +39,9 @@
 	.send-message {
 		max-width: 100%;
 	}
+	.dropdown-menu.def {
+		transform: translate3d(50%, -50%, 0);
+	}
 }
 
 @media(min-width: 1024px) {
@@ -46,6 +49,7 @@
 		width: 1000px;
 		margin: 0 auto;
 	}
+
 	.main {
 		 .additions {
 			padding-right: 70px;

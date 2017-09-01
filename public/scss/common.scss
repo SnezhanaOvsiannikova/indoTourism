@@ -10,6 +10,24 @@ body  {
 h2 {
 	color: $white;
 }
+.additions-list .dropdown-menu.def,
+.dropdown-menu.def {
+	padding: 5px 10px;
+	left: 50%;
+	transform: translate3d(-50%, -50%,0);
+	color: $blue1;
+	font-size: 16px;
+	&:focus,
+	&:active {
+		color: $blue1 !important;
+	} 
+}
+.additions-list .dropdown-menu.def {
+	top: 50%;
+}
+.dropdown-menu.def {
+	top:-100%;
+}
 .white-popup {
 	position: relative;
 	background: #FFF;
@@ -527,7 +545,8 @@ h2 {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 14px 5px;
-	&:hover {
+	&:hover,
+	&:focus {
 		color: $blue1;
 	}
 	span {
